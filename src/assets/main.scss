@@ -1,5 +1,9 @@
 @use './base/base';
+@use './base/layout';
 
 @use './components/header';
-@use './components/launch_list';
-@use './components/launch';
+@use './components/goal';
+@use './components/wisdom';
+@use './components/Modal';
+@use './components/quick_flow';
+@use './components/quick_flow_item';

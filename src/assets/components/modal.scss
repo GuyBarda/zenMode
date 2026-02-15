@@ -1,0 +1,151 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 26, 30, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  /* Base state is hidden so animations can take over */
+  opacity: 0;
+
+  &.overlay-enter {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  &.overlay-exit {
+    animation: fadeOut 0.3s ease-in forwards;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px;
+  gap: 32px;
+  text-align: center;
+  position: absolute;
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(30px);
+
+  &.modal-enter {
+    animation: slideUpEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.1s;
+  }
+
+  &.modal-exit {
+    animation: slideDownExit 0.3s cubic-bezier(0.33, 0, 0.67, 1) forwards;
+  }
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.breathe-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+
+  //   animation: breathePulse 8s ease-in-out infinite;
+}
+
+@keyframes breathePulse {
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.btns-row {
+  display: flex;
+  gap: 12px;
+}
+
+.glass-btn {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 10px 24px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+
+  &.active {
+    border-color: #fde047;
+    color: #fde047;
+    background: rgba(253, 224, 71, 0.08);
+    box-shadow: 0 0 12px rgba(253, 224, 71, 0.2);
+  }
+}
+
+.timer {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUpEnter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownExit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

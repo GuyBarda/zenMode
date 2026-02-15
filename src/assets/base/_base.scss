@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  //   color-scheme: light dark;
   color: #d7d7d7;
   background-color: #242424;
 
@@ -33,6 +33,12 @@ body {
   text-align: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('../../public/background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 input,

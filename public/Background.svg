@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <style>
+      @keyframes starDrift {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-1920px); }
+      }
+      .moving-stars {
+        animation: starDrift 150s linear infinite; /* 150s is very slow and calming */
+      }
+    </style>
+
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5E7D81"/>
+      <stop offset="100%" stop-color="#91AEAA"/>
+    </linearGradient>
+
+    <linearGradient id="hill1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B9A9A"/>
+      <stop offset="100%" stop-color="#5A797A"/>
+    </linearGradient>
+
+    <linearGradient id="hill2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#577678"/>
+      <stop offset="100%" stop-color="#385457"/>
+    </linearGradient>
+
+    <linearGradient id="hill3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A5659"/>
+      <stop offset="100%" stop-color="#1E3639"/>
+    </linearGradient>
+
+    <g id="star-cluster" fill="#ffffff">
+      <circle cx="15%" cy="20%" r="2" opacity="0.6" />
+      <circle cx="28%" cy="12%" r="1.5" opacity="0.8" />
+      <circle cx="50%" cy="25%" r="2.5" opacity="0.5" />
+      <circle cx="75%" cy="15%" r="2" opacity="0.7" />
+      <circle cx="88%" cy="28%" r="1.5" opacity="0.6" />
+      <circle cx="8%" cy="35%" r="1.2" opacity="0.4" />
+      <circle cx="22%" cy="45%" r="1" opacity="0.5" />
+      <circle cx="38%" cy="18%" r="1.5" opacity="0.3" />
+      <circle cx="45%" cy="40%" r="1" opacity="0.6" />
+      <circle cx="65%" cy="18%" r="1.2" opacity="0.5" />
+      <circle cx="72%" cy="42%" r="1.5" opacity="0.4" />
+      <circle cx="85%" cy="48%" r="1" opacity="0.5" />
+      <circle cx="95%" cy="20%" r="1.2" opacity="0.4" />
+
+      <circle cx="3%" cy="5%" r="1" opacity="0.5" />
+      <circle cx="9%" cy="14%" r="1.3" opacity="0.4" />
+      <circle cx="21%" cy="8%" r="1.1" opacity="0.6" />
+      <circle cx="33%" cy="5%" r="1.4" opacity="0.5" />
+      <circle cx="42%" cy="12%" r="1" opacity="0.7" />
+      <circle cx="58%" cy="6%" r="1.2" opacity="0.4" />
+      <circle cx="69%" cy="9%" r="1.5" opacity="0.6" />
+      <circle cx="81%" cy="4%" r="1.1" opacity="0.5" />
+      <circle cx="92%" cy="11%" r="1.3" opacity="0.7" />
+      <circle cx="4%" cy="25%" r="1" opacity="0.4" />
+      <circle cx="18%" cy="31%" r="1.2" opacity="0.5" />
+      <circle cx="31%" cy="22%" r="1.4" opacity="0.3" />
+      <circle cx="55%" cy="33%" r="1.1" opacity="0.6" />
+      <circle cx="67%" cy="27%" r="1.3" opacity="0.4" />
+      <circle cx="83%" cy="35%" r="1" opacity="0.5" />
+      <circle cx="97%" cy="29%" r="1.2" opacity="0.6" />
+
+      <circle cx="1%" cy="2%" r="0.6" opacity="0.3" />
+      <circle cx="6%" cy="9%" r="0.7" opacity="0.2" />
+      <circle cx="11%" cy="3%" r="0.5" opacity="0.4" />
+      <circle cx="16%" cy="13%" r="0.8" opacity="0.2" />
+      <circle cx="23%" cy="5%" r="0.6" opacity="0.3" />
+      <circle cx="29%" cy="10%" r="0.7" opacity="0.2" />
+      <circle cx="36%" cy="2%" r="0.5" opacity="0.4" />
+      <circle cx="41%" cy="15%" r="0.8" opacity="0.3" />
+      <circle cx="48%" cy="7%" r="0.6" opacity="0.2" />
+      <circle cx="53%" cy="12%" r="0.7" opacity="0.4" />
+      <circle cx="61%" cy="3%" r="0.5" opacity="0.3" />
+      <circle cx="66%" cy="14%" r="0.8" opacity="0.2" />
+      <circle cx="73%" cy="6%" r="0.6" opacity="0.4" />
+      <circle cx="79%" cy="11%" r="0.7" opacity="0.3" />
+      <circle cx="86%" cy="2%" r="0.5" opacity="0.2" />
+      <circle cx="91%" cy="13%" r="0.8" opacity="0.4" />
+      <circle cx="96%" cy="5%" r="0.6" opacity="0.3" />
+      <circle cx="2%" cy="18%" r="0.7" opacity="0.2" />
+      <circle cx="13%" cy="23%" r="0.5" opacity="0.4" />
+      <circle cx="24%" cy="19%" r="0.8" opacity="0.3" />
+      <circle cx="35%" cy="26%" r="0.6" opacity="0.2" />
+      <circle cx="46%" cy="21%" r="0.7" opacity="0.4" />
+      <circle cx="59%" cy="28%" r="0.5" opacity="0.3" />
+      <circle cx="70%" cy="24%" r="0.8" opacity="0.2" />
+      <circle cx="82%" cy="31%" r="0.6" opacity="0.4" />
+      <circle cx="93%" cy="26%" r="0.7" opacity="0.3" />
+      <circle cx="7%" cy="38%" r="0.5" opacity="0.2" />
+      <circle cx="19%" cy="43%" r="0.8" opacity="0.3" />
+      <circle cx="30%" cy="39%" r="0.6" opacity="0.2" />
+      <circle cx="43%" cy="46%" r="0.7" opacity="0.4" />
+      <circle cx="56%" cy="41%" r="0.5" opacity="0.3" />
+      <circle cx="68%" cy="48%" r="0.8" opacity="0.2" />
+      <circle cx="80%" cy="44%" r="0.6" opacity="0.4" />
+      <circle cx="94%" cy="49%" r="0.7" opacity="0.3" />
+
+      <circle cx="12%" cy="55%" r="0.5" opacity="0.15" />
+      <circle cx="25%" cy="52%" r="0.7" opacity="0.2" />
+      <circle cx="38%" cy="58%" r="0.6" opacity="0.1" />
+      <circle cx="51%" cy="54%" r="0.8" opacity="0.15" />
+      <circle cx="64%" cy="59%" r="0.5" opacity="0.2" />
+      <circle cx="77%" cy="53%" r="0.7" opacity="0.1" />
+      <circle cx="89%" cy="57%" r="0.6" opacity="0.15" />
+      <circle cx="5%" cy="62%" r="0.5" opacity="0.1" />
+      <circle cx="32%" cy="65%" r="0.6" opacity="0.15" />
+      <circle cx="58%" cy="63%" r="0.5" opacity="0.1" />
+      <circle cx="84%" cy="66%" r="0.7" opacity="0.15" />
+    </g>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#skyGrad)" />
+
+  <g class="moving-stars">
+    <use href="#star-cluster" x="0" y="0" />
+    <use href="#star-cluster" x="1920" y="0" />
+  </g>
+
+  <path d="M-50,650 C500,750 1200,550 1970,680 L1970,1130 L-50,1130 Z" fill="url(#hill1Grad)"/>
+  <path d="M-50,780 C600,680 1300,850 1970,750 L1970,1130 L-50,1130 Z" fill="url(#hill2Grad)"/>
+  <path d="M-50,920 C700,980 1400,850 1970,950 L1970,1130 L-50,1130 Z" fill="url(#hill3Grad)"/>
+</svg>
